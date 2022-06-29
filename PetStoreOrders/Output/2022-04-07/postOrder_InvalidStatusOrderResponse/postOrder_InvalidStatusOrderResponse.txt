@@ -1,0 +1,10 @@
+POST https://petstore.swagger.io/v2/store/order 
+ Request Headers =>Accept=*/*
+Content-Type=application/json; charset=UTF-8 
+ Request Body =>{"id":1,"petId":1,"quantity":1,"shipDate":"Invalid","status":"placed","complete":true}
+ Response Status => 500 HTTP/1.1 500 Server Error 
+ Response Body => {
+    "code": 500,
+    "type": "unknown",
+    "message": "something bad happened"
+}

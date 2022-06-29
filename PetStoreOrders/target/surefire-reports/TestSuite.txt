@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 12.591 s <<< FAILURE! - in TestSuite
+storeOrders.PostStoreOrders.postOrderPlaced_SuccessResponse  Time elapsed: 0.787 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Conversion issue on parameter: expectedSLA
+Caused by: java.lang.NumberFormatException: For input string: ""
+
+storeOrders.PostStoreOrders.postOrder_InvalidStatusOrderResponse  Time elapsed: 1.724 s  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [500]
+	at storeOrders.PostStoreOrders.postOrder_InvalidStatusOrderResponse(PostStoreOrders.java:99)
+
+storeOrders.PostStoreOrders.postStoreOrderTestData[null, null, null, null, null, null](8)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NumberFormatException: null
+	at storeOrders.PostStoreOrders.getStoreJsonString(PostStoreOrders.java:140)
+	at storeOrders.PostStoreOrders.postStoreOrderTestData(PostStoreOrders.java:112)
+
+storeOrders.GetStoreOrders.getOrder_Id_InvalidResponse  Time elapsed: 0.658 s  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [404]
+	at storeOrders.GetStoreOrders.getOrder_Id_InvalidResponse(GetStoreOrders.java:82)
+
+storeOrders.DeleteStoreOrders.deleteOrder_InvalidResponse  Time elapsed: 0.537 s  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [404]
+	at storeOrders.DeleteStoreOrders.deleteOrder_InvalidResponse(DeleteStoreOrders.java:75)
+

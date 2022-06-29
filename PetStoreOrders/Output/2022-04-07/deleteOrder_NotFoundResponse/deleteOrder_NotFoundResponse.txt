@@ -1,0 +1,9 @@
+DELETE https://petstore.swagger.io/v2/store/order/9999999 
+ Request Headers =>Accept=*/* 
+ Request Body =>null
+ Response Status => 404 HTTP/1.1 404 Not Found 
+ Response Body => {
+    "code": 404,
+    "type": "unknown",
+    "message": "Order Not Found"
+}

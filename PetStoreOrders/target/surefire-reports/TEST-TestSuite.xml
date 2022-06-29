@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="12.591" tests="16" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="c:\Dileep\Work\RestAssured\PetStoreOrders\target\test-classes;c:\Dileep\Work\RestAssured\PetStoreOrders\target\classes;C:\Users\dilee\.m2\repository\io\rest-assured\rest-assured\4.3.3\rest-assured-4.3.3.jar;C:\Users\dilee\.m2\repository\org\codehaus\groovy\groovy\3.0.7\groovy-3.0.7.jar;C:\Users\dilee\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.7\groovy-xml-3.0.7.jar;C:\Users\dilee\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\dilee\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\dilee\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\dilee\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\dilee\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\dilee\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\dilee\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\dilee\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\dilee\.m2\repository\org\codehaus\groovy\groovy-json\3.0.7\groovy-json-3.0.7.jar;C:\Users\dilee\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\dilee\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\dilee\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\dilee\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\dilee\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\dilee\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\dilee\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\dilee\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\dilee\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\dilee\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\dilee\.m2\repository\io\qameta\allure\allure-testng\2.13.9\allure-testng-2.13.9.jar;C:\Users\dilee\.m2\repository\io\qameta\allure\allure-java-commons\2.13.9\allure-java-commons-2.13.9.jar;C:\Users\dilee\.m2\repository\io\qameta\allure\allure-model\2.13.9\allure-model-2.13.9.jar;C:\Users\dilee\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\dilee\.m2\repository\org\apache\tika\tika-core\1.25\tika-core-1.25.jar;C:\Users\dilee\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;C:\Users\dilee\.m2\repository\io\qameta\allure\allure-test-filter\2.13.9\allure-test-filter-2.13.9.jar;C:\Users\dilee\.m2\repository\io\rest-assured\json-schema-validator\4.3.0\json-schema-validator-4.3.0.jar;C:\Users\dilee\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\dilee\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\dilee\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\dilee\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\dilee\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\dilee\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\dilee\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\dilee\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\dilee\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\dilee\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\dilee\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\dilee\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\dilee\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\dilee\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\dilee\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\dilee\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\dilee\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\dilee\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\dilee\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\dilee\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\dilee\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\dilee\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\dilee\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\dilee\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.0\jackson-databind-2.10.0.jar;C:\Users\dilee\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.0\jackson-annotations-2.10.0.jar;C:\Users\dilee\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.0\jackson-core-2.10.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_333\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\dilee\AppData\Local\Temp\surefire6570786648422630904\surefirebooter5530678131874681892.jar C:\Users\dilee\AppData\Local\Temp\surefire6570786648422630904 2022-06-27T21-50-41_478-jvmRun1 surefire8469185297708750930tmp surefire_06065782551537881729tmp"/>
+    <property name="group.name" value=""/>
+    <property name="surefire.test.class.path" value="c:\Dileep\Work\RestAssured\PetStoreOrders\target\test-classes;c:\Dileep\Work\RestAssured\PetStoreOrders\target\classes;C:\Users\dilee\.m2\repository\io\rest-assured\rest-assured\4.3.3\rest-assured-4.3.3.jar;C:\Users\dilee\.m2\repository\org\codehaus\groovy\groovy\3.0.7\groovy-3.0.7.jar;C:\Users\dilee\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.7\groovy-xml-3.0.7.jar;C:\Users\dilee\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\dilee\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\dilee\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\dilee\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\dilee\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\dilee\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\dilee\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\dilee\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\dilee\.m2\repository\org\codehaus\groovy\groovy-json\3.0.7\groovy-json-3.0.7.jar;C:\Users\dilee\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\dilee\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\dilee\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\dilee\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\dilee\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\dilee\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\dilee\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\dilee\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\dilee\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\dilee\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\dilee\.m2\repository\io\qameta\allure\allure-testng\2.13.9\allure-testng-2.13.9.jar;C:\Users\dilee\.m2\repository\io\qameta\allure\allure-java-commons\2.13.9\allure-java-commons-2.13.9.jar;C:\Users\dilee\.m2\repository\io\qameta\allure\allure-model\2.13.9\allure-model-2.13.9.jar;C:\Users\dilee\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\dilee\.m2\repository\org\apache\tika\tika-core\1.25\tika-core-1.25.jar;C:\Users\dilee\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;C:\Users\dilee\.m2\repository\io\qameta\allure\allure-test-filter\2.13.9\allure-test-filter-2.13.9.jar;C:\Users\dilee\.m2\repository\io\rest-assured\json-schema-validator\4.3.0\json-schema-validator-4.3.0.jar;C:\Users\dilee\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\dilee\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\dilee\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\dilee\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\dilee\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\dilee\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\dilee\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\dilee\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\dilee\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\dilee\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\dilee\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\dilee\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\dilee\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\dilee\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\dilee\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\dilee\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\dilee\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\dilee\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\dilee\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\dilee\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\dilee\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\dilee\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\dilee\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\dilee\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.0\jackson-databind-2.10.0.jar;C:\Users\dilee\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.0\jackson-annotations-2.10.0.jar;C:\Users\dilee\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.0\jackson-core-2.10.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\dilee"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_333\jre"/>
+    <property name="basedir" value="c:\Dileep\Work\RestAssured\PetStoreOrders"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="testEnvironment" value="dev"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\dilee\AppData\Local\Temp\surefire6570786648422630904\surefirebooter5530678131874681892.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_333\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_333\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_333\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_333-b02"/>
+    <property name="user.name" value="dilee"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_333\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\dilee\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\dilee\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_333"/>
+    <property name="user.dir" value="c:\Dileep\Work\RestAssured\PetStoreOrders"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_333\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\dilee\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2021.3.2\bin;;C:\Users\dilee\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\apache-maven-3.8.6\bin;C:\Program Files\Java\jdk1.8.0_333;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.333-b02"/>
+    <property name="expectedSLA" value=""/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_333\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="postOrderPlaced_SuccessResponse" classname="storeOrders.PostStoreOrders" time="0.787">
+    <failure message="&#10;Conversion issue on parameter: expectedSLA" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Conversion issue on parameter: expectedSLA
+Caused by: java.lang.NumberFormatException: For input string: ""
+]]></failure>
+    <system-out><![CDATA[[Configuration] [WARN] Detected a static method [storeOrders.EnvironmentSetup.Env_setup()]. Static configuration methods can cause  unexpected behavior.
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+log4j:WARN No appenders could be found for logger (storeOrders.EnvironmentSetup).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+[Utils] [ERROR] [Error] java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:601)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.testng.internal.Parameters.convertType(Parameters.java:524)
+	at org.testng.internal.Parameters.createParams(Parameters.java:273)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+]]></system-err>
+  </testcase>
+  <testcase name="postOrder_InvalidStatusOrderResponse" classname="storeOrders.PostStoreOrders" time="1.724">
+    <failure message="expected [400] but found [500]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [400] but found [500]
+	at storeOrders.PostStoreOrders.postOrder_InvalidStatusOrderResponse(PostStoreOrders.java:99)
+]]></failure>
+    <system-out><![CDATA[{
+    "code": 500,
+    "type": "unknown",
+    "message": "something bad happened"
+}
+{
+    "code": 500,
+    "type": "unknown",
+    "message": "something bad happened"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postStoreOrderTestData[1, 1, 1, 2022-03-30T20:53:08.651Z, placed, TRUE](1)" classname="storeOrders.PostStoreOrders" time="1.176">
+    <system-out><![CDATA[{
+    "id": 1,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:53:08.651+0000",
+    "status": "placed",
+    "complete": true
+}
+{
+    "id": 1,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:53:08.651+0000",
+    "status": "placed",
+    "complete": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postStoreOrderTestData[2, 1, 1, 2022-03-30T20:54:08.651Z, approved, TRUE](2)" classname="storeOrders.PostStoreOrders" time="0.809">
+    <system-out><![CDATA[{
+    "id": 2,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:54:08.651+0000",
+    "status": "approved",
+    "complete": true
+}
+{
+    "id": 2,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:54:08.651+0000",
+    "status": "approved",
+    "complete": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postStoreOrderTestData[3, 1, 1, 2022-03-30T20:55:08.651Z, delivered, TRUE](3)" classname="storeOrders.PostStoreOrders" time="0.594">
+    <system-out><![CDATA[{
+    "id": 3,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:55:08.651+0000",
+    "status": "delivered",
+    "complete": true
+}
+{
+    "id": 3,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:55:08.651+0000",
+    "status": "delivered",
+    "complete": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postStoreOrderTestData[4, 1, 1, 2022-03-30T20:56:08.651Z, placed, FALSE](4)" classname="storeOrders.PostStoreOrders" time="0.941">
+    <system-out><![CDATA[{
+    "id": 4,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:56:08.651+0000",
+    "status": "placed",
+    "complete": false
+}
+{
+    "id": 4,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:56:08.651+0000",
+    "status": "placed",
+    "complete": false
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postStoreOrderTestData[5, 1, 1, 2022-03-30T20:57:08.651Z, approved, FALSE](5)" classname="storeOrders.PostStoreOrders" time="0.814">
+    <system-out><![CDATA[{
+    "id": 5,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:57:08.651+0000",
+    "status": "approved",
+    "complete": false
+}
+{
+    "id": 5,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:57:08.651+0000",
+    "status": "approved",
+    "complete": false
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postStoreOrderTestData[6, 1, 1, 2022-03-30T20:58:08.651Z, delivered, FALSE](6)" classname="storeOrders.PostStoreOrders" time="0.591">
+    <system-out><![CDATA[{
+    "id": 6,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:58:08.651+0000",
+    "status": "delivered",
+    "complete": false
+}
+{
+    "id": 6,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:58:08.651+0000",
+    "status": "delivered",
+    "complete": false
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postStoreOrderTestData[7, 1, 1, 2022-03-30T20:59:08.651Z, placesdsdd, TRUE](7)" classname="storeOrders.PostStoreOrders" time="0.94">
+    <system-out><![CDATA[{
+    "id": 7,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:59:08.651+0000",
+    "status": "placesdsdd",
+    "complete": true
+}
+{
+    "id": 7,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:59:08.651+0000",
+    "status": "placesdsdd",
+    "complete": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postStoreOrderTestData[null, null, null, null, null, null](8)" classname="storeOrders.PostStoreOrders" time="0">
+    <failure message="null" type="java.lang.NumberFormatException"><![CDATA[java.lang.NumberFormatException: null
+	at storeOrders.PostStoreOrders.getStoreJsonString(PostStoreOrders.java:140)
+	at storeOrders.PostStoreOrders.postStoreOrderTestData(PostStoreOrders.java:112)
+]]></failure>
+  </testcase>
+  <testcase name="getOrder_Id_InvalidResponse" classname="storeOrders.GetStoreOrders" time="0.658">
+    <failure message="expected [400] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [400] but found [404]
+	at storeOrders.GetStoreOrders.getOrder_Id_InvalidResponse(GetStoreOrders.java:82)
+]]></failure>
+    <system-out><![CDATA[{
+    "code": 1,
+    "type": "error",
+    "message": "Order not found"
+}
+{
+    "code": 1,
+    "type": "error",
+    "message": "Order not found"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="getOrder_NotFoundResponse" classname="storeOrders.GetStoreOrders" time="0.618">
+    <system-out><![CDATA[{
+    "code": 1,
+    "type": "error",
+    "message": "Order not found"
+}
+{
+    "code": 1,
+    "type": "error",
+    "message": "Order not found"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="getOrder_SuccessResponse" classname="storeOrders.GetStoreOrders" time="0.639">
+    <system-out><![CDATA[{
+    "id": 1,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:53:08.651+0000",
+    "status": "placed",
+    "complete": true
+}
+{
+    "id": 1,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:53:08.651+0000",
+    "status": "placed",
+    "complete": true
+}
+]]></system-out>
+  </testcase>
+  <testcase name="deleteOrder_InvalidResponse" classname="storeOrders.DeleteStoreOrders" time="0.537">
+    <failure message="expected [400] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [400] but found [404]
+	at storeOrders.DeleteStoreOrders.deleteOrder_InvalidResponse(DeleteStoreOrders.java:75)
+]]></failure>
+    <system-out><![CDATA[{
+    "code": 404,
+    "type": "unknown",
+    "message": "Order Not Found"
+}
+{
+    "code": 404,
+    "type": "unknown",
+    "message": "Order Not Found"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="deleteOrder_NotFoundResponse" classname="storeOrders.DeleteStoreOrders" time="0.549">
+    <system-out><![CDATA[{
+    "code": 404,
+    "type": "unknown",
+    "message": "Order Not Found"
+}
+{
+    "code": 404,
+    "type": "unknown",
+    "message": "Order Not Found"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="deleteOrder_SuccessResponse" classname="storeOrders.DeleteStoreOrders" time="0.595">
+    <system-out><![CDATA[{
+    "code": 200,
+    "type": "unknown",
+    "message": "1"
+}
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1"
+}
+]]></system-out>
+  </testcase>
+</testsuite>

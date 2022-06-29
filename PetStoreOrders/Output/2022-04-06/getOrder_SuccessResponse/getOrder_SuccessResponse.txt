@@ -1,0 +1,12 @@
+GET https://petstore.swagger.io/v2/store/order/1 
+ Request Headers =>Accept=*/* 
+ Request Body =>null
+ Response Status => 200 HTTP/1.1 200 OK 
+ Response Body => {
+    "id": 1,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:53:08.651+0000",
+    "status": "placed",
+    "complete": true
+}

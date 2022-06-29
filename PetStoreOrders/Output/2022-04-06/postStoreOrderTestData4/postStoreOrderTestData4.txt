@@ -1,0 +1,13 @@
+POST https://petstore.swagger.io/v2/store/order 
+ Request Headers =>Accept=*/*
+Content-Type=application/json; charset=UTF-8 
+ Request Body =>{"id":4,"petId":1,"quantity":1,"shipDate":"2022-03-30T20:56:08.651Z","status":"placed","complete":false}
+ Response Status => 200 HTTP/1.1 200 OK 
+ Response Body => {
+    "id": 4,
+    "petId": 1,
+    "quantity": 1,
+    "shipDate": "2022-03-30T20:56:08.651+0000",
+    "status": "placed",
+    "complete": false
+}
